@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SMS: Your Personalized Online Tutoring Destination</title>
+    <link rel="stylesheet" href="home.css" />
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script defer>
+      $(function () {
+        $('#includeFooter').load('../footer/footer.html');
+        $('#includeNavigation').load('../navigation/navigation.html');
+      });
+    </script>
+  </head>
+  <body>
+    <div id="includeNavigation"></div>
+    <!-- ================  Header  =================== -->
+
+    <header class="text-gray-600 body-font">
+      <div
+        class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center"
+      >
+        <div
+          class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center"
+        >
+          <h1
+            class="title-font text-4xl mb-4 font-semibold text-gray-900 uppercase lg:text-5xl font-bold leading-tight"
+          >
+            One-on-one Online
+            <br class="hidden lg:inline-block" />Tutoring
+          </h1>
+
+          <ul
+            class="max-w-md space-y-1 text-gray-900 list-disc list-inside dark:text-gray-400 sm:"
+          >
+            <li>Experienced and qualified tutors.</li>
+            <li>One-on-one sessions.</li>
+            <li>Flexible scheduling.</li>
+            <li>Personalized learning plans.</li>
+            <li>Engaging and interactive lessons.</li>
+            <li>Affordable pricing.</li>
+          </ul>
+
+          <div class="flex justify-center">
+            <button
+              class="inline-flex text-white bg-blue-500 border-0 rounded-xl py-2 px-6 focus:outline-none mt-12 hover:bg-blue-600 uppercase"
+            >
+              free trial
+            </button>
+          </div>
+        </div>
+        <div class="lg:max-w-xl lg:w-full md:w-1/2 w-5/6">
+          <img
+            class="object-cover object-center rounded"
+            alt="hero"
+            src="../../images/vector/header-vector.png"
+          />
+        </div>
+      </div>
+    </header>
+    <!-- =====================  Our Services  =============================== -->
+
+    <section class="text-gray-600 body-font bg-white">
+      <div class="container px-5 py-24 mx-auto">
+        <div
+          class="flex flex-wrap w-full mb-20 flex-col items-center text-center"
+        >
+          <h2
+            class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900 font-bold leading-tight uppercase"
+          >
+            Our Services
+          </h2>
+          <p class="lg:w-1/2 w-full leading-relaxed text-gray-800">
+            Customizable Learning Plans for Individual Progression
+          </p>
+          <div class="flex mt-6 justify-center">
+            <div class="w-16 h-1 rounded-full bg-blue-500 inline-flex"></div>
+          </div>
+        </div>
+        <div class="flex flex-wrap -m-4">
+          <div class="xl:w-1/3 md:w-1/2 p-4 flex justify-center item-center">
+            <div class="border border-gray-200 p-6 rounded-lg">
+              <div
+                class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5 flex-shrink-0"
+              >
+                <svg
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  class="w-10 h-10"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                </svg>
+              </div>
+              <h2 class="text-lg text-gray-900 font-medium title-font mb-2">
+                Experienced tutors
+              </h2>
+              <p class="leading-relaxed text-base">
+                we provide experienced tutors who have expertise in the subject
+                matter they are teaching.
+              </p>
+            </div>
+          </div>
+          <div class="xl:w-1/3 md:w-1/2 p-4">
+            <div class="border border-gray-200 p-6 rounded-lg">
+              <div
+                class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5 flex-shrink-0"
+              >
+                <svg
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  class="w-10 h-10"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                </svg>
+              </div>
+              <h2 class="text-gray-900 font-medium title-font mb-2">
+                Flexible Scheduling
+              </h2>
+              <p class="leading-relaxed text-base">
+                flexible scheduling to accommodate the needs of students from
+                different time zones.
+              </p>
+            </div>
+          </div>
+          <div class="xl:w-1/3 md:w-1/2 p-4">
+            <div class="border border-gray-200 p-6 rounded-lg">
+              <div
+                class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5 flex-shrink-0"
+              >
+                <svg
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  class="w-10 h-10"
+                  viewBox="0 0 24 24"
+                >
+                  <circle cx="6" cy="6" r="3"></circle>
+                  <circle cx="6" cy="18" r="3"></circle>
+                  <path
+                    d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"
+                  ></path>
+                </svg>
+              </div>
+              <h2 class="text-gray-900 font-medium title-font mb-2">
+                Personalized learning
+              </h2>
+              <p class="leading-relaxed text-base">
+                personalized learning plans for each student, based on their
+                strengths and weaknesses.
+              </p>
+            </div>
+          </div>
+          <div class="xl:w-1/3 md:w-1/2 p-4">
+            <div class="border border-gray-200 p-6 rounded-lg">
+              <div
+                class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5 flex-shrink-0"
+              >
+                <svg
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  class="w-10 h-10"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+                  <circle cx="12" cy="7" r="4"></circle>
+                </svg>
+              </div>
+              <h2 class="text-gray-900 font-medium title-font mb-2">
+                Regular update
+              </h2>
+              <p class="leading-relaxed text-base">
+                regularly update the progress of the students and provide
+                feedback parents.
+              </p>
+            </div>
+          </div>
+          <div class="xl:w-1/3 md:w-1/2 p-4">
+            <div class="border border-gray-200 p-6 rounded-lg">
+              <div
+                class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5 flex-shrink-0"
+              >
+                <svg
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  class="w-10 h-10"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1zM4 22v-7"
+                  ></path>
+                </svg>
+              </div>
+              <h2 class="text-gray-900 font-medium title-font mb-2">Secure</h2>
+              <p class="leading-relaxed text-base">
+                We use secure and reliable technology to ensure the safety and
+                privacy of the students' personal information and data.
+              </p>
+            </div>
+          </div>
+
+          <div class="xl:w-1/3 md:w-1/2 p-4">
+            <div class="border border-gray-200 p-6 rounded-lg">
+              <div
+                class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5 flex-shrink-0"
+              >
+                <svg
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  class="w-10 h-10"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                </svg>
+              </div>
+              <h2 class="text-gray-900 font-medium title-font mb-2">
+                Affordable pricing
+              </h2>
+              <p class="leading-relaxed text-base">
+                affordable pricing options that are accessible to students of
+                all backgrounds.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================  Statics SEction  =============================== -->
+
+    <section class="text-gray-600 body-font">
+      <div class="container px-5 py-24 mx-auto">
+        <div class="flex flex-col text-center w-full mb-20">
+          <h2
+            class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900 font-bold leading-tight uppercase"
+          >
+            Our Success Story
+          </h2>
+          <p class="lg:w-2/3 mx-auto leading-relaxed text-base text-gray-800">
+            Our mission is to help you succeed - let our statistics show you
+            how.
+          </p>
+          <div class="flex mt-6 justify-center">
+            <div class="w-16 h-1 rounded-full bg-blue-500 inline-flex"></div>
+          </div>
+        </div>
+
+        <div class="flex flex-wrap -m-4 text-center">
+          <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+            <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
+              <svg
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                class="text-indigo-500 w-12 h-12 mb-3 inline-block"
+                viewBox="0 0 24 24"
+              >
+                <path d="M8 17l4 4 4-4m-4-5v9"></path>
+                <path
+                  d="M20.88 18.09A5 5 0 0018 9h-1.26A8 8 0 103 16.29"
+                ></path>
+              </svg>
+              <h2 class="title-font font-medium text-3xl text-gray-900">
+                100+
+              </h2>
+              <p class="leading-relaxed">Tutors</p>
+            </div>
+          </div>
+          <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+            <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
+              <svg
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                class="text-indigo-500 w-12 h-12 mb-3 inline-block"
+                viewBox="0 0 24 24"
+              >
+                <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 00-3-3.87m-4-12a4 4 0 010 7.75"></path>
+              </svg>
+              <h2 class="title-font font-medium text-3xl text-gray-900">96%</h2>
+              <p class="leading-relaxed">Success Rate</p>
+            </div>
+          </div>
+          <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+            <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
+              <svg
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                class="text-indigo-500 w-12 h-12 mb-3 inline-block"
+                viewBox="0 0 24 24"
+              >
+                <path d="M3 18v-6a9 9 0 0118 0v6"></path>
+                <path
+                  d="M21 19a2 2 0 01-2 2h-1a2 2 0 01-2-2v-3a2 2 0 012-2h3zM3 19a2 2 0 002 2h1a2 2 0 002-2v-3a2 2 0 00-2-2H3z"
+                ></path>
+              </svg>
+              <h2 class="title-font font-medium text-3xl text-gray-900">
+                500+
+              </h2>
+              <p class="leading-relaxed">Students</p>
+            </div>
+          </div>
+          <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+            <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
+              <svg
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                class="text-indigo-500 w-12 h-12 mb-3 inline-block"
+                viewBox="0 0 24 24"
+              >
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+              <h2 class="title-font font-medium text-3xl text-gray-900">4+</h2>
+              <p class="leading-relaxed">Subjects</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================
+    ============================ Getting Started======================================
+  ========================================= -->
+    <section class="text-gray-600 body-font bg-white">
+      <div class="container px-5 py-24 mx-auto">
+        <div class="text-center mb-20">
+          <h2
+            class="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4 font-bold leading-tight"
+          >
+            GETTING STARTED IS SIMPLE AS 123
+          </h2>
+          <p
+            class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-800"
+          >
+            You can Start achieving your academic potential in just a few
+            clicks.
+          </p>
+          <div class="flex mt-6 justify-center">
+            <div class="w-16 h-1 rounded-full bg-blue-500 inline-flex"></div>
+          </div>
+        </div>
+        <div
+          class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6 justify-center"
+        >
+          <div class="p-4 md:w-1/3 flex flex-col text-center items-center">
+            <div
+              class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5 flex-shrink-0"
+            >
+              <svg
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                class="w-10 h-10"
+                viewBox="0 0 24 24"
+              >
+                <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+              </svg>
+            </div>
+            <div class="flex-grow">
+              <h2 class="text-gray-900 text-lg title-font font-medium mb-3">
+                BOOK FREE LESSON
+              </h2>
+              <p class="leading-relaxed text-base">
+                Book a free assessment lesson with our expert tutor by filling
+                out the form.
+              </p>
+              <a
+                class="mt-3 text-indigo-500 inline-flex items-center cursor-pointer"
+                >Book Now
+                <svg
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  class="w-4 h-4 ml-2"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="p-4 md:w-1/3 flex flex-col text-center items-center">
+            <div
+              class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5 flex-shrink-0"
+            >
+              <svg
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                class="w-10 h-10"
+                viewBox="0 0 24 24"
+              >
+                <circle cx="6" cy="6" r="3"></circle>
+                <circle cx="6" cy="18" r="3"></circle>
+                <path
+                  d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"
+                ></path>
+              </svg>
+            </div>
+            <div class="flex-grow">
+              <h2 class="text-gray-900 text-lg title-font font-medium mb-3">
+                Schedule your session
+              </h2>
+              <p class="leading-relaxed text-base">
+                schedule a tutoring session with one of our experienced tutors.
+              </p>
+              <a
+                class="mt-3 text-indigo-500 inline-flex items-center cursor-pointer"
+                >Start Session
+                <svg
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  class="w-4 h-4 ml-2"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="p-4 md:w-1/3 flex flex-col text-center items-center">
+            <div
+              class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5 flex-shrink-0"
+            >
+              <svg
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                class="w-10 h-10"
+                viewBox="0 0 24 24"
+              >
+                <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+            </div>
+            <div class="flex-grow">
+              <h2 class="text-gray-900 text-lg title-font font-medium mb-3">
+                Start learning
+              </h2>
+              <p class="leading-relaxed text-base">
+                We'll provide you with personalized support and guidance,
+                helping you to achieve your goals.
+              </p>
+              <a
+                class="mt-3 text-indigo-500 inline-flex items-center cursor-pointer"
+                >Start Now
+                <svg
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  class="w-4 h-4 ml-2"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================= Contact Section ============================= -->
+    <section class="text-gray-600 body-font relative bg-white" id="contact">
+      <div class="container px-5 py-24 mx-auto">
+        <div class="flex flex-col text-center w-full mb-12">
+          <h2
+            class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900 font-bold leading-tight"
+          >
+            TRY FIRST LESSON FREE!
+          </h2>
+          <p class="lg:w-2/3 mx-auto leading-relaxed text-base text-gray-800">
+            Experience the excellence of our expert private tutoring services .
+          </p>
+          <div class="flex mt-6 justify-center">
+            <div class="w-16 h-1 rounded-full bg-yellow-500 inline-flex"></div>
+          </div>
+        </div>
+
+        <div class="lg:w-1/2 md:w-2/3 mx-auto">
+          <div class="flex flex-wrap -m-2">
+            <div class="p-2 w-1/2">
+              <div class="relative">
+                <label for="name" class="leading-7 text-sm text-gray-600"
+                  >Name</label
+                >
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                />
+              </div>
+            </div>
+            <div class="p-2 w-1/2">
+              <div class="relative">
+                <label for="cell-number" class="leading-7 text-sm text-gray-600"
+                  >Phone Number</label
+                >
+                <input
+                  type="tel"
+                  id="cell-number"
+                  name="cell-number"
+                  pattern="[0-9]{3}-[0-9]{2}-[0-9]{3} required"
+                  class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                />
+              </div>
+            </div>
+            <div class="p-2 w-1/2">
+              <div class="relative">
+                <label for="email" class="leading-7 text-sm text-gray-600"
+                  >Email</label
+                >
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                />
+              </div>
+            </div>
+            <div class="p-2 w-1/2">
+              <div class="relative">
+                <label for="subject" class="leading-7 text-sm text-gray-600"
+                  >Subject</label
+                >
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                />
+              </div>
+            </div>
+            <div class="p-2 w-full">
+              <div class="relative">
+                <label for="message" class="leading-7 text-sm text-gray-600"
+                  >Message</label
+                >
+                <textarea
+                  id="message"
+                  name="message"
+                  class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+                ></textarea>
+              </div>
+            </div>
+            <div class="p-2 w-full">
+              <button
+                class="flex mx-auto text-white bg-blue-500 border-0 py-2 px-8 focus:outline-none hover:bg-blue-600 rounded-xl text-lg uppercase"
+              >
+                Submit
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ============================= Footer ============================= -->
+
+    <div id="includeFooter"></div>
+  </body>
+</html>

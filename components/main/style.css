@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+:root {
+  --gutter-huge: 15rem;
+  --gutter-normal: 6rem;
+  --gutter-medium: 4rem;
+  --gutter-small: 3rem;
+  --gutter-x-small: 2rem;
+  --gutter-xx-small: 1rem;
+
+  --h1: 4.8rem;
+  --h2: 6.4rem;
+  --h3: 3.2rem;
+  --p: 2.4rem;
+  --p-small: 1.8rem;
+
+  --primary-color: #0f52ba;
+  --secondary-color: #0c4497;
+  --light-blue: #115dd0;
+  --light-font-color: #f7f7f7;
+  --dark-font-color: #111;
+  --light-dark-font-color: #333;
+  --small-font-color: #666;
+  --orange-btn: #fa9746;
+  --orange-btn-light: #fba660;
+  --bg-gradient: linear-gradient(
+    90deg,
+    rgb(34, 108, 235) 2%,
+    rgb(69, 127, 177) 45%,
+    rgb(54, 103, 163) 100%
+  );
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  /* font-size: 62.5%; */
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--light-font-color);
+}
+
+/* *===================================
+  *========== Reuseable Components =======
+  *======================================= */
+
+section {
+  /* margin-bottom: var(--gutter-huge); */
+}
+
+h1 {
+  font-size: 4.4rem;
+  color: var(--secondary-color);
+  font-weight: 600;
+}
+
+.row {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.btn {
+  text-decoration: none;
+  background-color: var(--primary-color);
+  color: var(--light-font-color);
+  padding: var(--gutter-x-small) var(--gutter-small);
+  border-radius: 15px;
+  transition: 0.3s;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.btn:hover {
+  background-color: var(--light-blue);
+}

@@ -1,0 +1,95 @@
+/* @import '../main/style.css';
+
+/* ===============Phone number and email ===*/
+.nav-message {
+  background-color: var(--secondary-color);
+  color: var(--light-font-color);
+  display: flex;
+  gap: var(--gutter-x-small);
+  padding: 5px var(--gutter-normal);
+}
+.cell-number,
+.email {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+.nav-message img,
+nav img {
+  height: 12px;
+}
+
+/* ============Navigation ======== */
+/* body { */
+/* font-size: 62.5%; */
+/* } */
+/* nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--gutter-xx-small) var(--gutter-normal);
+  background-color: #fff;
+  border-bottom: 1px solid rgb(228, 228, 228);
+}
+
+.nav-logo span {
+  font-size: var(--h1);
+}
+
+.nav-links > ul {
+  display: flex;
+  gap: var(--gutter-x-small);
+}
+.nav-links ul li {
+  list-style: none;
+}
+
+.nav-links ul li a {
+  text-decoration: none;
+  color: #2d2d2d;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.pricing a,
+.curriculum a {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.pricing,
+.curriculum {
+  position: relative;
+}
+
+.pricing-list,
+.curriculum-list {
+  position: absolute;
+  left: 0;
+  top: 5.8rem;
+  width: 25rem;
+  background-color: #fff;
+  border-top: 2px solid var(--secondary-color);
+  padding: var(--gutter-x-small);
+  display: none;
+}
+
+.pricing-list li:not(:last-child),
+.curriculum-list li:not(:last-child) {
+  margin-bottom: var(--gutter-x-small);
+}
+.pricing:hover .pricing-list {
+  display: block;
+}
+.curriculum:hover .curriculum-list {
+  display: block;
+}
+
+.nav-btn {
+  padding: var(--gutter-xx-small) var(--gutter-x-small);
+  color: var(--light-font-color) !important;
+}  */

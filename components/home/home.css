@@ -1,0 +1,55 @@
+@import '../main/style.css';
+@import '../navigation/navigation.css';
+
+/* ============================== */
+header .row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+}
+
+.header-content h1 {
+  font-size: var(--h3);
+  color: var(--dark-font-color);
+  margin-bottom: var(--gutter-xx-small);
+  font-weight: 500;
+}
+
+.header-content ul {
+  margin-bottom: var(--gutter-medium);
+}
+
+.header-content ul li {
+  font-size: var(--p-small);
+  color: var(--dark-font-color);
+  list-style: inside;
+  margin-bottom: 4px;
+}
+
+.header-content a {
+  font-size: 14px;
+  background-color: var(--orange-btn);
+}
+.header-content a:hover {
+  background-color: var(--orange-btn-light);
+}
+
+.header-img img {
+  max-width: 800px;
+  max-height: 400px;
+}
+
+/* ============================== */
+.wwo-section .row small {
+  /* position: absolute; */
+}
+.wwo-section .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gutter-medium);
+}
+
+.wwo-section .row article {
+  max-width: 300px;
+}

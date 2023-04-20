@@ -1,0 +1,107 @@
+@import '../navigation/navigation.css';
+@import '../main/style.css';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.curriculum-container {
+  max-width: 1200px;
+  margin: 4rem auto;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.curriculum-container h1 {
+  font-size: 2.25rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.curriculum-details {
+  display: flex;
+  gap: 5rem;
+  justify-content: space-between;
+}
+
+.curriculum-details h2 {
+  margin-bottom: 1rem;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.curriculum-details article {
+  width: 20rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.curriculum-details h2 img {
+  display: inline;
+  margin-right: 0.3rem;
+}
+
+.curriculum-details article details {
+  border: 1px solid #d4d4d4;
+  background: #f4f4f4;
+  color: #0c71c3;
+  font-weight: bold;
+  cursor: pointer;
+  width: 300px;
+}
+
+.curriculum-details article details summary {
+  padding: 1rem;
+  list-style: none;
+}
+
+.curriculum-details article details summary > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.curriculum-details article details ol {
+  padding: 1rem;
+  font-weight: 400;
+  color: #232935;
+}
+.curriculum-details ol li {
+  list-style: inside;
+  list-style-type: decimal;
+  color: #777;
+}
+.curriculum-details ol li:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+@media (max-width: 1280px) {
+  .curriculum-details {
+    gap: 2rem;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 1080px) {
+  .curriculum-details {
+    max-width: 800px;
+    flex-direction: column;
+    gap: 4rem;
+  }
+  .curriculum-details article {
+    width: 100%;
+  }
+  .curriculum-details article details {
+    width: 100%;
+  }
+}
+
+@media (max-width: 550px) {
+  .curriculum-container h1 {
+    font-size: 2rem;
+  }
+}

@@ -1,4 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   --gutter-huge: 15rem;
   --gutter-normal: 6rem;
@@ -35,34 +38,14 @@
   margin: 0;
   padding: 0;
 }
-
-html {
-  /* font-size: 62.5%; */
-}
-
 body {
-  font-family: 'Inter', sans-serif;
+  /* font-family: 'Josefin Sans', sans-serif; */
   background-color: var(--light-font-color);
 }
 
 /* *===================================
   *========== Reuseable Components =======
   *======================================= */
-
-section {
-  /* margin-bottom: var(--gutter-huge); */
-}
-
-h1 {
-  font-size: 4.4rem;
-  color: var(--secondary-color);
-  font-weight: 600;
-}
-
-.row {
-  max-width: 1200px;
-  margin: 0 auto;
-}
 
 .btn {
   text-decoration: none;
@@ -78,4 +61,74 @@ h1 {
 
 .btn:hover {
   background-color: var(--light-blue);
+}
+/* ========================================== */
+.nav-message {
+  background-color: var(--secondary-color);
+  color: var(--light-font-color);
+  display: flex;
+  gap: var(--gutter-x-small);
+  padding: 5px var(--gutter-normal);
+}
+.cell-number,
+.email {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+.nav-message img,
+nav img {
+  height: 12px;
+}
+
+@media (max-width: 600px) {
+  .nav-message {
+    padding: 4px 20px;
+  }
+}
+@media (max-width: 440px) {
+  .nav-message {
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    padding: 4px;
+  }
+}
+
+.wwo-section .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gutter-medium);
+}
+
+.wwo-section .row article {
+  max-width: 300px;
+}
+
+.blob {
+  width: 400px;
+  height: 400px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url('data:image/svg+xml;utf8,%3Csvg xmlns=%22http:%2F%2Fwww.w3.org%2F2000%2Fsvg%22 width=%22639.196%22 height=%22571.58%22 viewBox=%22194.764 246.422 639.196 571.58%22%3E%3Cdefs%3E%3CclipPath id=%22a%22%3E%3Cpath fill=%22currentColor%22 d=%22M765.5 686.5Q621 873 411.5 795T195 495.5Q188 274 388.5 250t361 113q160.5 137 16 323.5Z%22%2F%3E%3C%2FclipPath%3E%3C%2Fdefs%3E%3Cg clip-path=%22url(%23a)%22%3E%3Cpath fill=%22%230c4497%22 d=%22M765.5 686.5Q621 873 411.5 795T195 495.5Q188 274 388.5 250t361 113q160.5 137 16 323.5Z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+}
+
+@media (max-width: 1024px) {
+  .blob {
+    width: 350px;
+    height: 350px;
+  }
+}
+
+@media (max-width: 580px) {
+  .blob {
+    width: 300px;
+    height: 300px;
+  }
 }

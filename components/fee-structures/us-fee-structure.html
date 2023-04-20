@@ -4,11 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="fee-structure.css" />
-    <script
-      src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"
-      defer
-    ></script>
+    <link rel="stylesheet" href="../../dist/output.css" />
+
+
     <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script>
       $(function () {
@@ -20,42 +18,41 @@
       href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
       rel="stylesheet"
     />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script defer src="../../src/script.js"></script>
+
     <title>Fee structure for UK</title>
   </head>
   <body>
     <div id="includeNavigation"></div>
     <!-- --------------------------   Main Image -------------------- -->
-    <section>
-      <img
-        src="../.././images/pricing/Pricing-Header-For-UK-scaled.jpg"
-        alt="picture of boy"
-        class="pricing-main-image"
-      />
-    </section>
+    
     <section
       class="classes-division flex flex-col container px-5 py-24 mx-auto bg-transparent"
     >
       <h1 class="text-4xl mt-6 font-bold text-gray-900">I AM LOOKING FOR:</h1>
-      <div class="year-buttons flex gap-12">
-        <button
+      <div class="year-buttons flex flex-col gap-2 lg:gap-12 lg:flex-row">
+        <a href="#1-4"
           class="inline-flex text-white text-2xl bg-blue-500 border-0 rounded-xl py-2 px-6 focus:outline-none mt-12 hover:bg-blue-600 shadow-xl uppercase"
         >
           Year 1-4
-        </button>
-        <button
+        </a>
+        <a href="#5-8"
           class="inline-flex text-white text-2xl bg-blue-500 border-0 rounded-xl py-2 px-6 focus:outline-none mt-12 hover:bg-blue-600 shoadow-xl uppercase"
         >
           Year 5-8
-        </button>
-        <button
+        </a>
+        <a href="#9-10"
           class="inline-flex text-white text-2xl bg-blue-500 border-0 rounded-xl py-2 px-6 focus:outline-none mt-12 hover:bg-blue-600 shoadow-xl uppercase"
         >
           Year 9-10
-        </button>
+        </a>
       </div>
     </section>
     <!-- --------------------------   YEAR GROUP 1-4  -------------------- -->
-    <section class="text-gray-600 body-font overflow-hidden bg-white">
+    <section class="text-gray-600 body-font overflow-hidden bg-white" id="1-4">
       <div class="container px-5 py-24 mx-auto">
         <div class="flex flex-col text-center w-full mb-20">
           <h1
@@ -71,7 +68,7 @@
           </div>
         </div>
         <div class="flex flex-wrap -m-4 justify-center item-center">
-          <div class="p-4 xl:w-1/4 md:w-1/2 w-full">
+          <div class="p-4 xl:w-1/4 md:w-1/2 w-full" data-aos="zoom-in-right">
             <div
               class="h-full shadow-2xl p-6 rounded-lg border-2 border-gray-300 flex flex-col relative overflow-hidden"
             >
@@ -173,7 +170,7 @@
               </p>
             </div>
           </div>
-          <div class="p-4 xl:w-1/4 md:w-1/2 w-full">
+          <div class="p-4 xl:w-1/4 md:w-1/2 w-full" data-aos="zoom-in">
             <div
               class="h-full shadow-2xl p-6 rounded-lg border-2 border-indigo-500 flex flex-col relative overflow-hidden"
             >
@@ -279,7 +276,7 @@
               </p>
             </div>
           </div>
-          <div class="p-4 xl:w-1/4 md:w-1/2 w-full">
+          <div class="p-4 xl:w-1/4 md:w-1/2 w-full" data-aos="zoom-in-left">
             <div
               class="h-full shadow-2xl p-6 rounded-lg border-2 border-gray-300 flex flex-col relative overflow-hidden"
             >
@@ -385,7 +382,7 @@
       </div>
     </section>
     <!-- --------------------------   YEAR GROUP 5-8  -------------------- -->
-    <section class="text-gray-600 body-font overflow-hidden">
+    <section class="text-gray-600 body-font overflow-hidden" id="5-8">
       <div class="container px-5 py-24 mx-auto">
         <div class="flex flex-col text-center w-full mb-20">
           <h1
@@ -401,7 +398,7 @@
           </div>
         </div>
         <div class="flex flex-wrap -m-4 item-center justify-center">
-          <div class="p-4 xl:w-1/4 md:w-1/2 w-full">
+          <div class="p-4 xl:w-1/4 md:w-1/2 w-full" data-aos="zoom-in-right">
             <div
               class="h-full shadow-2xl p-6 rounded-lg border-2 border-gray-300 flex flex-col relative overflow-hidden"
             >
@@ -503,7 +500,7 @@
               </p>
             </div>
           </div>
-          <div class="p-4 xl:w-1/4 md:w-1/2 w-full">
+          <div class="p-4 xl:w-1/4 md:w-1/2 w-full" data-aos="zoom-in">
             <div
               class="h-full shadow-2xl p-6 rounded-lg border-2 border-indigo-500 flex flex-col relative overflow-hidden"
             >
@@ -609,7 +606,7 @@
               </p>
             </div>
           </div>
-          <div class="p-4 xl:w-1/4 md:w-1/2 w-full">
+          <div class="p-4 xl:w-1/4 md:w-1/2 w-full" data-aos="zoom-in-left">
             <div
               class="h-full shadow-2xl p-6 rounded-lg border-2 border-gray-300 flex flex-col relative overflow-hidden"
             >
@@ -715,7 +712,7 @@
       </div>
     </section>
     <!-- --------------------------   YEAR GROUP 9-10  -------------------- -->
-    <section class="text-gray-600 body-font overflow-hidden bg-white">
+    <section class="text-gray-600 body-font overflow-hidden bg-white" id="9-10">
       <div class="container px-5 py-24 mx-auto">
         <div class="flex flex-col text-center w-full mb-20">
           <h1
@@ -731,7 +728,7 @@
           </div>
         </div>
         <div class="flex flex-wrap -m-4 item-center justify-center">
-          <div class="p-4 xl:w-1/4 md:w-1/2 w-full">
+          <div class="p-4 xl:w-1/4 md:w-1/2 w-full" data-aos="zoom-in-right">
             <div
               class="h-full shadow-2xl p-6 rounded-lg border-2 border-gray-300 flex flex-col relative overflow-hidden"
             >
@@ -833,7 +830,7 @@
               </p>
             </div>
           </div>
-          <div class="p-4 xl:w-1/4 md:w-1/2 w-full">
+          <div class="p-4 xl:w-1/4 md:w-1/2 w-full" data-aos="zoom-in">
             <div
               class="h-full shadow-2xl p-6 rounded-lg border-2 border-indigo-500 flex flex-col relative overflow-hidden"
             >
@@ -939,7 +936,7 @@
               </p>
             </div>
           </div>
-          <div class="p-4 xl:w-1/4 md:w-1/2 w-full">
+          <div class="p-4 xl:w-1/4 md:w-1/2 w-full" data-aos="zoom-in-left">
             <div
               class="h-full shadow-2xl shadow-2xl p-6 rounded-lg border-2 border-gray-300 flex flex-col relative overflow-hidden"
             >

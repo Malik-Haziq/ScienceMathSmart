@@ -7,10 +7,6 @@
     <title>SMS: Your Personalized Online Tutoring Destination</title>
     <link rel="stylesheet" href="./src/style.css" />
 
-    <link
-      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
-      rel="stylesheet"
-    />
     <script
       src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"
       defer
@@ -33,17 +29,15 @@
       </div>
     </div>
 
-    <nav
-      class="w-full text-gray-700 bg-white dark-mode:text-gray-200 dark-mode:bg-gray-800 p-2"
-    >
+    <nav class="w-full text-gray-700 bg-white p-2">
       <div
         x-data="{ open: false }"
-        class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8"
+        class="flex flex-col px-4 md:items-center md:justify-between md:flex-row md:px-0 lg:px-8"
       >
         <div class="flex flex-row items-center justify-between">
           <a
             href="/index.html"
-            class="font-semibold tracking-widest text-gray-900 uppercase rounded-lg dark-mode:text-white focus:outline-none focus:shadow-outline"
+            class="font-semibold tracking-widest text-gray-900 uppercase rounded-lg outline-none focus:shadow-outline"
             ><img
               src="./images/SMS-logo/logo.jpg"
               alt="SMS logo"
@@ -71,10 +65,10 @@
         </div>
         <nav
           :class="{'flex': open, 'hidden': !open}"
-          class="flex-col flex-grow pb-4 md:pb-0 hidden md:flex md:justify-end md:flex-row border-none"
+          class="flex-col pb-4 md:pb-0 hidden md:flex md:justify-end md:flex-row border-none"
         >
           <a
-            class="px-4 py-2 mt-2 text-sm font-semibold text-gray-900 transition-5 rounded-lg dark-mode:bg-gray-700 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+            class="px-4 py-2 mt-2 text-sm font-semibold text-gray-900 transition-5 rounded-lg md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
             href="/index.html"
             >Home</a
           >
@@ -85,7 +79,7 @@
           >
             <button
               @click="open = !open"
-              class="flex flex-row items-center w-full px-4 py-2 mt-2 text-sm font-semibold text-left bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:focus:bg-gray-600 dark-mode:hover:bg-gray-600 md:w-auto md:inline md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+              class="flex flex-row items-center w-full px-4 py-2 mt-2 text-sm font-semibold text-left bg-transparent rounded-lg md:w-auto md:inline md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
             >
               <span>Curriculum</span>
               <svg
@@ -109,18 +103,16 @@
               x-transition:leave="transition ease-in duration-75"
               x-transition:leave-start="transform opacity-100 scale-100"
               x-transition:leave-end="transform opacity-0 scale-95"
-              class="absolute right-0 w-full mt-2 origin-top-right rounded-md shadow-lg md:w-72"
+              class="absolute right-0 mt-2 origin-top-right rounded-md w-full md:w-48 z-50"
             >
-              <div
-                class="px-2 py-2 bg-white rounded-md shadow dark-mode:bg-gray-800"
-              >
+              <div class="px-2 py-2 bg-white rounded-md shadow-lg">
                 <a
-                  class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                  class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
                   href="uk-curriculum.html"
                   >UK Curriculum</a
                 >
                 <a
-                  class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                  class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
                   href="us-curriculum.html"
                   >US Curriculum</a
                 >
@@ -134,7 +126,7 @@
           >
             <button
               @click="open = !open"
-              class="flex flex-row items-center w-full px-4 py-2 mt-2 text-sm font-semibold text-left rounded-lg dark-mode:bg-transparent dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:focus:bg-gray-600 dark-mode:hover:bg-gray-600 md:w-auto md:inline md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+              class="flex flex-row items-center w-full px-4 py-2 mt-2 text-sm font-semibold text-left rounded-lgmd:w-auto md:inline md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
             >
               <span>Pricing</span>
               <svg
@@ -160,16 +152,14 @@
               x-transition:leave-end="transform opacity-0 scale-95"
               class="absolute right-0 w-full mt-2 origin-top-right rounded-md shadow-lg md:w-48"
             >
-              <div
-                class="px-2 py-2 bg-white rounded-md shadow dark-mode:bg-gray-800"
-              >
+              <div class="px-2 py-2 bg-white rounded-md shadow">
                 <a
-                  class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                  class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
                   href="./uk-fee-structure.html"
                   >Fee Structure for UK</a
                 >
                 <a
-                  class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                  class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
                   href="/us-fee-structure.html"
                   >Fee Structure for US</a
                 >
@@ -177,12 +167,10 @@
             </div>
           </div>
           <a
-            class="px-4 py-2 mt-2 mb-8 md:mb-0 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+            class="px-4 py-2 mt-2 mb-8 md:mb-0 text-sm font-semibold bg-transparent rounded-lg md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
             href="./contact.html"
             >Contact</a
           >
-          <!-- <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-          href="./about-us.html">About</a> -->
           <a
             class="inline-flex text-white bg-blue-500 border-0 md:w-fit mx-auto md:mx-4 rounded-xl py-2 px-6 focus:outline-none hover:bg-blue-600 uppercase"
             href="./trial.html"

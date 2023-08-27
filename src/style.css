@@ -69,7 +69,7 @@ body {
   color: var(--light-font-color);
   display: flex;
   gap: var(--gutter-x-small);
-  padding: 5px var(--gutter-normal);
+  padding: 5px var(--gutter-small);
 }
 .cell-number,
 .email {

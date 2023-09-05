@@ -54,115 +54,300 @@
     ></script>
   </head>
   <body>
-    <h1>Website Terms and Conditions of Use</h1>
+    <div id="myButton"></div>
+    <div class="nav-message">
+      <div class="cell-number">
+        <img src="./images/icons/phone.svg" alt="Phone icon" />
+        <small> <a href="callto:+447456434635">+447456434635 </a></small>
+      </div>
+      <div class="email">
+        <img src="./images/icons/email.svg" alt="Phone icon" />
+        <small
+          ><a href="mailto:info@sciencemathsmart.com"
+            >info@sciencemathsmart.com</a
+          >
+        </small>
+      </div>
+    </div>
 
-    <h2>1. Terms</h2>
+    <nav class="w-full text-gray-700 bg-white p-2">
+      <div
+        x-data="{ open: false }"
+        class="flex flex-col px-4 md:items-center md:justify-between md:flex-row md:px-0 lg:px-8"
+      >
+        <div class="flex flex-row items-center justify-between">
+          <a
+            href="/index.html"
+            class="font-semibold tracking-widest text-gray-900 uppercase rounded-lg outline-none focus:shadow-outline"
+            ><img
+              src="./images/SMS-logo/logo.jpg"
+              alt="SMS logo"
+              style="height: 70px"
+          /></a>
+          <button
+            class="md:hidden rounded-lg focus:outline-none focus:shadow-outline"
+            @click="open = !open"
+          >
+            <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
+              <path
+                x-show="!open"
+                fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
+                clip-rule="evenodd"
+              ></path>
+              <path
+                x-show="open"
+                fill-rule="evenodd"
+                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+        </div>
+        <nav
+          :class="{'flex': open, 'hidden': !open}"
+          class="flex-col pb-4 md:pb-0 hidden md:flex md:justify-end md:flex-row border-none"
+        >
+          <a
+            class="px-4 py-2 mt-2 text-sm font-semibold text-gray-900 transition-5 rounded-lg md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+            href="/index.html"
+            >Home</a
+          >
+          <div
+            @click.away="open = false"
+            class="relative"
+            x-data="{ open: false }"
+          >
+            <button
+              @click="open = !open"
+              class="flex flex-row items-center w-full px-4 py-2 mt-2 text-sm font-semibold text-left bg-transparent rounded-lg md:w-auto md:inline md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+            >
+              <span>Curriculum</span>
+              <svg
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                :class="{'rotate-180': open, 'rotate-0': !open}"
+                class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform md:-mt-1"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </button>
+            <div
+              x-show="open"
+              x-transition:enter="transition ease-out duration-100"
+              x-transition:enter-start="transform opacity-0 scale-95"
+              x-transition:enter-end="transform opacity-100 scale-100"
+              x-transition:leave="transition ease-in duration-75"
+              x-transition:leave-start="transform opacity-100 scale-100"
+              x-transition:leave-end="transform opacity-0 scale-95"
+              class="absolute right-0 mt-2 origin-top-right rounded-md w-full md:w-48 z-50"
+            >
+              <div class="px-2 py-2 bg-white rounded-md shadow-lg">
+                <a
+                  class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                  href="uk-curriculum.html"
+                  >UK Curriculum</a
+                >
+                <a
+                  class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                  href="us-curriculum.html"
+                  >US Curriculum</a
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            @click.away="open = false"
+            class="relative"
+            x-data="{ open: false }"
+          >
+            <button
+              @click="open = !open"
+              class="flex flex-row items-center w-full px-4 py-2 mt-2 text-sm font-semibold text-left rounded-lg md:w-auto md:inline md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+            >
+              <span>Pricing</span>
+              <svg
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                :class="{'rotate-180': open, 'rotate-0': !open}"
+                class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform md:-mt-1"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </button>
+            <div
+              x-show="open"
+              x-transition:enter="transition ease-out duration-100"
+              x-transition:enter-start="transform opacity-0 scale-95"
+              x-transition:enter-end="transform opacity-100 scale-100"
+              x-transition:leave="transition ease-in duration-75"
+              x-transition:leave-start="transform opacity-100 scale-100"
+              x-transition:leave-end="transform opacity-0 scale-95"
+              class="absolute right-0 w-full mt-2 origin-top-right rounded-md shadow-lg md:w-48"
+            >
+              <div class="px-2 py-2 bg-white rounded-md shadow">
+                <a
+                  class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                  href="./uk-fee-structure.html"
+                  >Fee Structure for UK</a
+                >
+                <a
+                  class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                  href="/us-fee-structure.html"
+                  >Fee Structure for US</a
+                >
+              </div>
+            </div>
+          </div>
+          <a
+            class="px-4 py-2 mt-2 mb-8 md:mb-0 text-sm font-semibold bg-transparent rounded-lg md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+            href="./contact.html"
+            >Contact</a
+          >
+          <a
+            class="inline-flex text-white bg-blue-500 border-0 md:w-fit mx-auto md:mx-4 rounded-xl py-2 px-6 focus:outline-none hover:bg-blue-600 uppercase"
+            href="./trial.html"
+          >
+            free trial
+          </a>
+        </nav>
+      </div>
+    </nav>
 
-    <p>
-      By accessing this Website, accessible from https://sciencemathsmart.com/,
-      you are agreeing to be bound by these Website Terms and Conditions of Use
-      and agree that you are responsible for the agreement with any applicable
-      local laws. If you disagree with any of these terms, you are prohibited
-      from accessing this site. The materials contained in this Website are
-      protected by copyright and trade mark law.
-    </p>
+    <!-- ================ -->
+    <section class="sm:mx-12 mx-6 lg:mx-48 my-24">
+      <h1
+        class="heading title-font text-2xl bold text-gray-900 lg:text-5xl font-bold leading-tight mb-10"
+      >
+        Website Terms and Conditions of Use
+      </h1>
 
-    <h2>2. Use License</h2>
+      <h2 class="title-font text-2xl font-bold mb-2">Terms</h2>
 
-    <p>
-      Permission is granted to temporarily download one copy of the materials on
-      SMS's Website for personal, non-commercial transitory viewing only. This
-      is the grant of a license, not a transfer of title, and under this license
-      you may not:
-    </p>
+      <p class="mb-8">
+        By accessing this Website, accessible from
+        <a
+          href="http://sciencemathsmart.com/"
+          rel="external nofollow noopener"
+          target="_blank"
+          >http://sciencemathsmart.com/</a
+        >, you are agreeing to be bound by these Website Terms and Conditions of
+        Use and agree that you are responsible for the agreement with any
+        applicable local laws. If you disagree with any of these terms, you are
+        prohibited from accessing this site. The materials contained in this
+        Website are protected by copyright and trade mark law.
+      </p>
 
-    <ul>
-      <li>modify or copy the materials;</li>
-      <li>
-        use the materials for any commercial purpose or for any public display;
-      </li>
-      <li>
-        attempt to reverse engineer any software contained on SMS's Website;
-      </li>
-      <li>
-        remove any copyright or other proprietary notations from the materials;
-        or
-      </li>
-      <li>
-        transferring the materials to another person or "mirror" the materials
-        on any other server.
-      </li>
-    </ul>
+      <h2 class="title-font text-2xl font-bold mb-2">Use License</h2>
 
-    <p>
-      This will let SMS to terminate upon violations of any of these
-      restrictions. Upon termination, your viewing right will also be terminated
-      and you should destroy any downloaded materials in your possession whether
-      it is printed or electronic format. These Terms of Service has been
-      created with the help of the
-      <a href="https://www.termsofservicegenerator.net"
-        >Terms Of Service Generator</a
-      >.
-    </p>
+      <p class="mb-3">
+        Permission is granted to temporarily download one copy of the materials
+        on SMS's Website for personal, non-commercial transitory viewing only.
+        This is the grant of a license, not a transfer of title, and under this
+        license you may not:
+      </p>
 
-    <h2>3. Disclaimer</h2>
+      <ul class="list-disc list-inside mb-5">
+        <li>modify or copy the materials;</li>
+        <li>
+          use the materials for any commercial purpose or for any public
+          display;
+        </li>
+        <li>
+          attempt to reverse engineer any software contained on SMS's Website;
+        </li>
+        <li>
+          remove any copyright or other proprietary notations from the
+          materials; or
+        </li>
+        <li>
+          transferring the materials to another person or "mirror" the materials
+          on any other server.
+        </li>
+      </ul>
 
-    <p>
-      All the materials on SMS's Website are provided "as is". SMS makes no
-      warranties, may it be expressed or implied, therefore negates all other
-      warranties. Furthermore, SMS does not make any representations concerning
-      the accuracy or reliability of the use of the materials on its Website or
-      otherwise relating to such materials or any sites linked to this Website.
-    </p>
+      <p class="mb-8">
+        This will let SMS to terminate upon violations of any of these
+        restrictions. Upon termination, your viewing right will also be
+        terminated and you should destroy any downloaded materials in your
+        possession whether it is printed or electronic format.
+      </p>
 
-    <h2>4. Limitations</h2>
+      <h2 class="title-font text-2xl font-bold mb-2">Disclaimer</h2>
 
-    <p>
-      SMS or its suppliers will not be hold accountable for any damages that
-      will arise with the use or inability to use the materials on SMS's
-      Website, even if SMS or an authorize representative of this Website has
-      been notified, orally or written, of the possibility of such damage. Some
-      jurisdiction does not allow limitations on implied warranties or
-      limitations of liability for incidental damages, these limitations may not
-      apply to you.
-    </p>
+      <p class="mb-8">
+        All the materials on SMS's Website are provided "as is". SMS makes no
+        warranties, may it be expressed or implied, therefore negates all other
+        warranties. Furthermore, SMS does not make any representations
+        concerning the accuracy or reliability of the use of the materials on
+        its Website or otherwise relating to such materials or any sites linked
+        to this Website.
+      </p>
 
-    <h2>5. Revisions and Errata</h2>
+      <h2 class="title-font text-2xl font-bold mb-2">Limitations</h2>
 
-    <p>
-      The materials appearing on SMS's Website may include technical,
-      typographical, or photographic errors. SMS will not promise that any of
-      the materials in this Website are accurate, complete, or current. SMS may
-      change the materials contained on its Website at any time without notice.
-      SMS does not make any commitment to update the materials.
-    </p>
+      <p class="mb-8">
+        SMS or its suppliers will not be hold accountable for any damages that
+        will arise with the use or inability to use the materials on SMS's
+        Website, even if SMS or an authorize representative of this Website has
+        been notified, orally or written, of the possibility of such damage.
+        Some jurisdiction does not allow limitations on implied warranties or
+        limitations of liability for incidental damages, these limitations may
+        not apply to you.
+      </p>
 
-    <h2>6. Links</h2>
+      <h2 class="title-font text-2xl font-bold mb-2">Revisions and Errata</h2>
 
-    <p>
-      SMS has not reviewed all of the sites linked to its Website and is not
-      responsible for the contents of any such linked site. The presence of any
-      link does not imply endorsement by SMS of the site. The use of any linked
-      website is at the user's own risk.
-    </p>
+      <p class="mb-8">
+        The materials appearing on SMS's Website may include technical,
+        typographical, or photographic errors. SMS will not promise that any of
+        the materials in this Website are accurate, complete, or current. SMS
+        may change the materials contained on its Website at any time without
+        notice. SMS does not make any commitment to update the materials.
+      </p>
 
-    <h2>7. Site Terms of Use Modifications</h2>
+      <h2 class="title-font text-2xl font-bold mb-2">Links</h2>
 
-    <p>
-      SMS may revise these Terms of Use for its Website at any time without
-      prior notice. By using this Website, you are agreeing to be bound by the
-      current version of these Terms and Conditions of Use.
-    </p>
+      <p class="mb-8">
+        SMS has not reviewed all of the sites linked to its Website and is not
+        responsible for the contents of any such linked site. The presence of
+        any link does not imply endorsement by SMS of the site. The use of any
+        linked website is at the user's own risk.
+      </p>
 
-    <h2>8. Your Privacy</h2>
+      <h2 class="title-font text-2xl font-bold mb-2">
+        Site Terms of Use Modifications
+      </h2>
 
-    <p>Please read our Privacy Policy.</p>
+      <p class="mb-8">
+        SMS may revise these Terms of Use for its Website at any time without
+        prior notice. By using this Website, you are agreeing to be bound by the
+        current version of these Terms and Conditions of Use.
+      </p>
 
-    <h2>9. Governing Law</h2>
+      <h2 class="title-font text-2xl font-bold mb-2">Your Privacy</h2>
 
-    <p>
-      Any claim related to SMS's Website shall be governed by the laws of pk
-      without regards to its conflict of law provisions.
-    </p>
+      <p class="mb-8">
+        Please read our
+        <a href="/privacy-policy.html" class="underline">Privacy Policy</a>.
+      </p>
+
+      <h2 class="title-font text-2xl font-bold mb-2">Governing Law</h2>
+
+      <p class="mb-8">
+        Any claim related to SMS's Website shall be governed by the laws of pk
+        without regards to its conflict of law provisions.
+      </p>
+    </section>
+
+    <div id="includeFooter"></div>
   </body>
 </html>
